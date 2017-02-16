@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Songs of the Universe</string>
+    <string name="action_settings">Settings</string>
+    <string name="fifteen">15</string>
+    <string name="thirty">30</string>
+    <string name="sixty">60</string>
+    <string-array name="spinner_list">
+        <item>This will be the paragraph</item>
+        <item>About</item>
+    </string-array>
+
+</resources>

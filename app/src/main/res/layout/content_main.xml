@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    android:id = "@+id/scroll_layout"
+    >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Songs of the Universe"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About"
+                    android:textAllCaps="false"
+                    android:id="@+id/button"
+                    android:clickable="true"
+                    android:onClick="displayAbout"
+                    android:background="#000000"
+                    android:textSize="18dp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/sun_transparent"
+                    android:background="@null"
+                    android:onClick="playbackWindow"
+                    android:id="@+id/sunButton"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/earth_transparent"
+                    android:background="@null"
+                    android:onClick="playbackWindow"
+                    android:id="@+id/earthButton"
+                    android:paddingBottom="10sp"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/jupiter_transparent"
+                    android:background="@null"
+                    android:onClick="playbackWindow"
+                    android:id="@+id/jupiterButton"
+                    android:paddingBottom="12sp" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/saturn_transparent"
+                    android:background="@null"
+                    android:onClick="playbackWindow"
+                    android:id="@+id/saturnButton"
+                    android:paddingBottom="3sp" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/uranus_transparent"
+                    android:background="@null"
+                    android:onClick="playbackWindow"
+                    android:id="@+id/uranusButton"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/neptune_transparent"
+                    android:background="@null"
+                    android:onClick="playbackWindow"
+                    android:id="@+id/neptuneButton"/>
+
+        </LinearLayout>
+    </ScrollView>

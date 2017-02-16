@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    android:id = "@+id/scroll_layout_playback">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.eric.songsoftheuniverse.PlaybackWindow">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/playbackTitle"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#ffffff"/>
+            <ImageView
+                android:id="@+id/bigImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="30sp"/>
+                            <RadioGroup
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingTop="20sp"
+                                android:checkedButton="@+id/fifteenButton"
+                                android:layout_gravity="center_horizontal"
+                                android:id="@+id/radio_group">
+                                    <RadioButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/fifteen"
+                                        android:onClick="fifteenClicked"
+                                        android:textColor="#ffffff"
+                                        android:background="#000000"
+                                        android:textStyle="bold"
+                                        android:textSize="20sp"
+                                        android:id="@+id/fifteenButton"
+                                        android:buttonTint="#ffffff"
+
+                                        />
+                                    <RadioButton
+                                        android:id="@+id/thirtyButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/thirty"
+                                        android:onClick="thirtyClicked"
+                                        android:textColor="#ffffff"
+                                        android:background="#000000"
+                                        android:textStyle="bold"
+                                        android:textSize="20sp"
+                                        android:buttonTint="#ffffff"
+                                        android:layout_marginRight="30sp"
+                                        android:layout_marginLeft="30sp" />
+                                    <RadioButton
+                                        android:id="@+id/sixtyButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/sixty"
+                                        android:onClick="sixtyClicked"
+                                        android:textColor="#ffffff"
+                                        android:background="#000000"
+                                        android:textStyle="bold"
+                                        android:textSize="20sp"
+                                        android:buttonTint="#ffffff"
+                                        />
+                            </RadioGroup>
+
+                    <ImageButton
+                        android:id="@+id/playPause"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:onClick="playPause"
+                        android:layout_gravity="center"
+                        android:paddingTop="5sp"/>
+
+    </LinearLayout>
+</ScrollView>
